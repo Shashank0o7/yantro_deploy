@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>admin</title>
+
+  <!-- Favicons -->
+  
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/zabuto_calendar.css">
+  <link rel="stylesheet" type="text/css" href="lib/gritter/css/jquery.gritter.css" />
+  <!-- Custom styles for this template -->
+  <link href="css/styleadmin.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <script src="lib/chart-master/Chart.js"></script>
+  <style>
+    /* .container {
+	  position: relative;
+	  text-align: center;
+	  color: white;
+	} */
+		.centered1 {
+			position: absolute;
+			top: 60%;
+			left: 60%;
+			font-size: 50px;
+			color: burlywood;
+			transform: translate(-50%, -50%);
+		  }
+  </style>
+ 
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="#" class="logo"><b>Yantro<span>Mitra</span></b></a>
+      <!--logo end-->
+      <a href="/logout" style="float: right; margin-top: 10px;"><button class="btn btn-info">Logout</button></a>
+     
+        
+           
+           
+              
+          
+           
+          
+          <!-- settings end -->
+          <!-- inbox dropdown start-->
+      
+           
+    
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+         
+          <li class="mt">
+            <a class="active" href="#">
+              <i class="fa fa-home"></i>
+              <span>Home</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="/admin">
+              <i class="fa fa-user"></i>
+              <span>Show Registered Users</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="/admin/message">
+              <i class="fa fa-envelope"></i>
+              <span>Show Messages From Users</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="/dataentry">
+              <i class="fa fa-plus"></i>
+              <span>Add New Course</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="/addnewsubject">
+              <i class="fa fa-plus"></i>
+              <span>Add New Subject</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="/addnewchapter">
+              <i class="fa fa-plus"></i>
+              <span>Add New Chapter</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="/addnewvideo">
+              <i class="fa fa-plus"></i>
+              <span>Add New Video</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="/createtest">
+              <i class="fa fa-plus"></i>
+              <span>Create New Test</span>
+              </a>
+          </li>
+          <!-- <li class="mt">
+            <a class="active" href="/code_for_student">
+              <i class="fa fa-dashboard"></i>
+              <span>Generate Access Code</span>
+              </a>
+          </li> -->
+          <li class="mt">
+            <a class="active" href="/showdoubtadmin">
+              <i class="fa fa-envelope-open"></i>
+              <span>Show Doubts From Students</span>
+              </a>
+              <li class="mt">
+                <a class="active" href="/createnotification">
+                  <i class="fa fa-envelope"></i>
+                  <span>Create Notifications</span>
+                  </a>
+              </li>
+              
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+<div class="container">
+    <section id="main-content">
+      <section class="wrapper">
+        <div class="row">
+          <!-- <div class="col-lg-9 main-chart"> -->
+            <!-- <div class="custom-bar-chart"> -->
+              <!-- <img src="images/welcome5.jpeg" style="width: 100%;"> -->
+              
+                <!-- <div class="container" > -->
+                  <img id="head" class="round_corner" src="images/welcome5.jpeg">
+                  <div class="container" >
+                  <div class="centered1"><b>YOUR DASHBOARD</b></div>
+                  </div>
+                <!-- </div> -->
+              
+            <!-- </div> -->
+            <!--CUSTOM CHART START -->
+            <!-- <div class="border-head">
+           <a href="/admin">   <h4>Registered User</h4></a>
+            </div> -->
+            <!-- <div class="custom-bar-chart">
+              <ul class="y-axis">
+                <li><span>10.000</span></li>
+                <li><span>8.000</span></li>
+                <li><span>6.000</span></li>
+                <li><span>4.000</span></li>
+                <li><span>2.000</span></li>
+                <li><span>0</span></li>
+              </ul>
+              <div class="bar">
+                <div class="title">JAN</div>
+                <div class="value tooltips" data-original-title="8.500" data-toggle="tooltip" data-placement="top">85%</div>
+              </div>
+              <div class="bar ">
+                <div class="title">FEB</div>
+                <div class="value tooltips" data-original-title="5.000" data-toggle="tooltip" data-placement="top">50%</div>
+              </div>
+              <div class="bar ">
+                <div class="title">MAR</div>
+                <div class="value tooltips" data-original-title="6.000" data-toggle="tooltip" data-placement="top">60%</div>
+              </div>
+              <div class="bar ">
+                <div class="title">APR</div>
+                <div class="value tooltips" data-original-title="4.500" data-toggle="tooltip" data-placement="top">45%</div>
+              </div>
+              <div class="bar">
+                <div class="title">MAY</div>
+                <div class="value tooltips" data-original-title="3.200" data-toggle="tooltip" data-placement="top">32%</div>
+              </div>
+              <div class="bar ">
+                <div class="title">JUN</div>
+                <div class="value tooltips" data-original-title="6.200" data-toggle="tooltip" data-placement="top">62%</div>
+              </div>
+              <div class="bar">
+                <div class="title">JUL</div>
+                <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
+              </div>
+            </div> -->
+            <!--custom chart end-->
+            <div class="row mt">
+              <!-- SERVER STATUS PANELS -->
+              <div class="col-md-4 col-sm-4 mb">
+                <div class="grey-panel pn donut-chart">
+                  <img src="images/course.jpeg" height="100%" width="100%">
+                  <div class="grey-header">
+                 <a class="area" href="/dataentry">   <h3 id="head1" style="text-shadow: 2px 2px 5px red;">Add New Course</h3></a>
+                  </div>
+                 
+                  
+                 
+                </div>
+                <!-- /grey-panel -->
+              </div>
+              <!-- /col-md-4-->
+              <div class="col-md-4 col-sm-4 mb">
+                <div class="darkblue-panel pn">
+                  <img id="head" src="images/subject.jpeg" height="100%" width="100%">
+                  <div class="darkblue-header">
+                   <a class="area" href="/addnewsubject"> <h3 id="head2" style="text-shadow: 2px 2px 5px red;">Add New Subject</h3></a>
+                  </div>
+                
+                  
+                  <footer>
+                   
+                   
+                  </footer>
+                </div>
+                <!--  /darkblue panel -->
+              </div>
+              <!-- /col-md-4 -->
+              <div class="col-md-4 col-sm-4 mb">
+                <!-- REVENUE PANEL -->
+                <!-- <div class="green-panel pn"> -->
+                  <div class="darkblue-panel pn">
+                    <img src="images/chapter.jpeg" width="100%" height="100%">
+                <a class="area" href="/addnewchapter">    <h3 id="head3" style="text-shadow: 2px 2px 5px red;">Add New Chapter</h3></a>
+                  </div>
+                  <div class="chart mt">
+              
+                  <!-- </div> -->
+              
+                </div>
+              </div>
+              <!-- /col-md-4 -->
+            </div>
+            <!-- /row -->
+            <div class="row">
+          
+              <div class="col-md-4 mb">
+                <div class="weather pn">
+                  <img src="images/Video1.jpg" width="100%" height="100%">
+                <a class="area" href="/addnewvideo">  <h3 id="head4" style="text-shadow: 2px 2px 5px red;">Add New Video</h3>
+                  </a>
+                </div>
+              </div>
+              <!-- /col-md-4-->
+              <!-- DIRECT MESSAGE PANEL -->
+              <div class="col-md-8 mb">
+                <div class="message-p pn">
+                  <div class="message-header">
+               <a href="/admin/message">     <h5>Show Messages</h5></a>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 centered hidden-sm hidden-xs">
+                      <img src="images/user.jpg" class="img-circle" width="65">
+                    </div>
+                    <div class="col-md-9">
+                     
+                      <tbody>
+                        <% message.forEach(function(user,f){ %>
+                         
+                      <tr>
+                        <th scope="row"><%=f+1%></th>
+                        <!-- <td><%= user.name %></td> -->
+                        <td><%= user.email %></td>
+                        <td><%= user.subject %></td>
+                        <td><%= user.message %></td>
+                        <hr>
+                      </tr>
+                      <% }) %>
+                      </tbody>
+                         
+                    </div>
+                  </div>
+                </div>
+                <!-- /Message Panel-->
+              </div>
+              <!-- /col-md-8  -->
+            </div>
+            <div class="row">
+             
+              <!-- /col-md-4 -->
+              <div class="col-md-4 mb">
+                <!-- WHITE PANEL - TOP USER -->
+                <div class="white-panel pn">
+                  <img src="images/code.jpeg" height="100%" width="100%">
+                  <a class="area" href="#" ><h3 id="head5"style="text-shadow: 2px 2px 5px red;">Generate Access Code</h3></a>
+                 
+                  
+                  
+                </div>
+              </div>
+
+               <!-- TWITTER PANEL -->
+               <div class="col-md-4 mb">
+                <div class="twitter-panel pn">
+                  <i class="fa fa-twitter fa-4x"></i>
+                  <p>YantroMitra is here! Take a look and enjoy updates about us.</p>
+                  <p class="user">@yantroMitra</p>
+                </div>
+              </div>
+              <!-- /col-md-4 -->
+              <div class="col-md-4 mb">
+                <!-- INSTAGRAM PANEL -->
+                <div class="instagram-panel pn">
+                  <i class="fa fa-instagram fa-4x"></i>
+                  <p>@YantroMitra<br/>
+                  </p>
+                  <p><i class="fa fa-comment"></i> 18 | <i class="fa fa-heart"></i> 49</p>
+                </div>
+          
+
+              <!-- /col-md-4 -->
+            </div>
+            <!-- /row -->
+           
+            <!-- /row -->
+          <!-- </div> -->
+          </div>
+          
+          <!-- /col-lg-9 END SECTION MIDDLE -->
+          <!-- **********************************************************************************************************************************************************
+              RIGHT SIDEBAR CONTENT
+              *********************************************************************************************************************************************************** -->
+          
+        <!-- /row -->
+      </section>
+    </section>
+  </div>
+    
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--footer end-->
+  </section>
+  
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="lib/jquery.scrollTo.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <script src="lib/jquery.sparkline.js"></script>
+  <!--common script for all pages-->
+  <script src="lib/common-scripts.js"></script>
+  <script type="text/javascript" src="lib/gritter/js/jquery.gritter.js"></script>
+  <script type="text/javascript" src="lib/gritter-conf.js"></script>
+  <!--script for this page-->
+  <script src="lib/sparkline-chart.js"></script>
+  <script src="lib/zabuto_calendar.js"></script>
+  
+  </script>
+</body>
+
+</html>

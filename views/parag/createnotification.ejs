@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>notification</title>
+
+  <!-- Favicons -->
+  
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/zabuto_calendar.css">
+  <link rel="stylesheet" type="text/css" href="lib/gritter/css/jquery.gritter.css" />
+  <!-- Custom styles for this template -->
+  <link href="css/stylenoti.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <script src="lib/chart-master/Chart.js"></script>
+
+ 
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="#" class="logo"><b>Yantro<span>Mitra</span></b></a>
+      <!--logo end-->
+      <a href="/logout" style="float: right;"><button class="btn btn-info">Logout</button></a>
+     
+        
+           
+           
+              
+          
+           
+          
+          <!-- settings end -->
+          <!-- inbox dropdown start-->
+      
+           
+    
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+         
+          <li class="mt">
+            <a class="active" href="#">
+              <i class="fa fa-home"></i>
+              <span>Home</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="#">
+              <i class="fa fa-user"></i>
+              <span>Show Registered Users</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="#">
+              <i class="fa fa-envelope"></i>
+              <span>Show Messages From Users</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="#">
+              <i class="fa fa-plus"></i>
+              <span>Add New Course</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="#">
+              <i class="fa fa-plus"></i>
+              <span>Add New Subject</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="#">
+              <i class="fa fa-plus"></i>
+              <span>Add New Chapter</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="#">
+              <i class="fa fa-plus"></i>
+              <span>Add New Video</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="#">
+              <i class="fa fa-plus"></i>
+              <span>Create New Test</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="#">
+              <i class="fa fa-dashboard"></i>
+              <span>Generate Access Code</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a class="active" href="#">
+              <i class="fa fa-envelope-open"></i>
+              <span>Show Doubts From Students</span>
+              </a>
+              <li class="mt">
+                <a class="active" href="#">
+                  <i class="fa fa-envelope"></i>
+                  <span>Create Notifications</span>
+                  </a>
+              </li>
+              <li class="mt">
+                <a class="active" href="#">
+                  <i class="fa fa-back"></i>
+                  <span>Go Back</span>
+                  </a>
+              </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+
+    <section id="main-content">
+      <section class="wrapper">
+        <div class="row">
+          <div class="col-lg-9 main-chart">
+            <!--CUSTOM CHART START -->
+            <div class="wrapper" style="background-image: url('images/noti5.jpg');background-size: cover;">
+              <form action="/createnotification" method="POST">   
+                <h2 style="text-align: center;color:#4ECDC4">Create Notifications</h2>
+                <br>
+                <br>
+                <br>
+                <label>NOTICE</label>
+                <input name="not[message]" class="feedback-input" placeholder="Notice"> 
+                <label>ADD LINK</label> 
+                <input name="not[link]" type="text" class="feedback-input" placeholder="Add Link" />   
+                
+                
+                <input type="submit" value="SUBMIT"/>
+                <a href="#" id="facebook" class="fa fa-facebook"></a>
+                <a href="#" id="twitter" class="fa fa-twitter"></a>
+                <a href="#" id="linkedin" class="fa fa-linkedin"></a>
+                <a href="#" id="pin" class="fa fa-pinterest"></a>
+              </form>
+            
+              </div>
+              </div>
+              
+          <!-- /col-lg-9 END SECTION MIDDLE -->
+          <!-- **********************************************************************************************************************************************************
+              RIGHT SIDEBAR CONTENT
+              *********************************************************************************************************************************************************** -->
+          <div id="sideba" class="col-lg-3 ds">
+            <!--COMPLETED ACTIONS DONUTS CHART-->
+            <div class="donut-main">
+            <a  href="#">  <h3><u>Previous Notifications</u></h3></a>
+            
+            </div>
+    
+            <!-- First Activity -->
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>1 hour ago</muted>
+                  <br/>
+                  <a href="#"></a>Sale! Sale! Sale!<br/>
+                </p>
+              </div>
+            </div>
+            <!-- Second Activity -->
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>2 Minutes Ago</muted>
+                  <br/>
+                  <a href="#"></a> register for something new.<br/>
+                </p>
+              </div>
+            </div>
+            <!-- Third Activity -->
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>3 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a> 100% off<br/>
+                </p>
+              </div>
+            </div>
+            <!-- Fourth Activity -->
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+            <div class="desc">
+              <div class="thumb">
+                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
+              </div>
+              <div class="details">
+                <p>
+                  <muted>7 Hours Ago</muted>
+                  <br/>
+                  <a href="#"></a>Buy one for double price<br/>
+                </p>
+              </div>
+            </div>
+      
+            <!-- Second Member -->
+      
+            <!-- Fourth Member -->
+        
+            <!-- / calendar -->
+          </div>
+          <!-- /col-lg-3 -->
+        </div>
+        <!-- /row -->
+      </section>
+    </section>
+  
+    
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+
+        *********************************************************************************************************************************************************** -->
+    <!--footer end-->
+  </section>
+  
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="lib/jquery.scrollTo.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <script src="lib/jquery.sparkline.js"></script>
+  <!--common script for all pages-->
+  <script src="lib/common-scripts.js"></script>
+  <script type="text/javascript" src="lib/gritter/js/jquery.gritter.js"></script>
+  <script type="text/javascript" src="lib/gritter-conf.js"></script>
+  <!--script for this page-->
+  <script src="lib/sparkline-chart.js"></script>
+  <script src="lib/zabuto_calendar.js"></script>
+  
+  </script>
+</body>
+
+</html>

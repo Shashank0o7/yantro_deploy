@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW Video</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      body{
+          background: #43C6AC;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+  </style>
+</head>
+<body>
+    <div style="margin: 50px 100px;">
+    
+        <form action="/newvideo" method="POST">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Class Code</label>
+            <select name="classcode">
+                <% course.forEach(function(c){ %>
+              <option value="<%=c.classcode%>"><%=c.classcode%></option>
+
+              <%})%>
+  
+            </select>
+            <p><strong>where class1 if for class1 and so on! </strong></p>
+            
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Subject</label>
+            <select name="subject">
+                <% subject.forEach(function(c){ %>
+              <option value="<%=c.name%>"><%=c.name%> - <%=c.detail.course%></option>
+
+              <%})%>
+  
+            </select>
+            
+            
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Chapter</label>
+            <select name="chapter">
+                <% chap.forEach(function(c){ %>
+              <option value="<%=c.name%>"><%=c.name%> - <%=c.detail.subject%> - <%=c.detail.course%></option>
+
+              <%})%>
+  
+            </select>
+            
+            
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+</body>
+</html>

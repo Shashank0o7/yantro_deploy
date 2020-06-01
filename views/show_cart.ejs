@@ -1,0 +1,95 @@
+<%- include('partials/header.ejs') %>
+<div id="">
+    <div class="">
+      <h1>YOUR CART IS HERE!</h1>
+      
+        <br><br>
+        <%=cart.username%>
+        <br/>
+        <p>code<span>   </span>
+        <% for(var i=0;i!= 4;i++){%>
+        
+            <p><%=cart.code[i]%></p>
+            <p> <%=cart.c_name[i]%></p>
+            <p><%=cart.amount[i]%></p>
+            
+           
+        <%}%>
+          <form action="/cart_delete" method="POST" >
+            <input type="hidden" name="code" value="<%=cart.code[i]%>">
+            <input type="hidden" name="cart_id" value="<%=cart._id%>">
+             
+               <button>DELETE CART</button>
+          
+          </form>
+        
+        <p><b><%=cart.total_amount%></b></p>
+        <form action="/#" method="POST" class="register">
+            <input type="hidden" name="code" value="<%=cart.code[i]%>">
+            <input type="hidden" name="cart_id" value="<%=cart._id%>">
+          <button id="rzp-button1">BUY</button>
+                      <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+            <script>
+            var options = {
+                "key": "rzp_test_dtmoYr23Ui29Sc", // Enter the Key ID generated from the Dashboard
+                "amount": <%=cart.total_amount%>*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+                // "amount": 800*100,
+                "currency": "INR",
+                "name": "YantroMitra",
+                "description": "Course Purchase",
+                "image": "https://example.com/your_logo",
+                // "order_id": "order_9A33XWu170gUtm", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+                "handler": function (response){
+                    // alert(response.razorpay_payment_id);
+                    // alert(response.razorpay_order_id);
+                    // alert(response.razorpay_signature)
+                    // yantromitra1.transaction_confirmation.insert({
+                    //   Transaction_id:"1526"
+                    // })
+                    // var output=document.getElementById('output')
+                    // output.innerText=response.razorpay_payment_id;
+                    // console.log("hello")
+                    // alert(response.razorpay_payment_id);
+                    // window.document.location='./after_transaction/'+response.razorpay_payment_id+'/sign/'+response.razorpay_signature;
+                    window.document.location='./after_transaction/'+response.razorpay_payment_id;
+                    // qr.onload=function(){YOUR_div_id.innerHTML=qr.responseText}
+                    // save_to_db(response.razorpay_payment_id);
+                },
+                "prefill": {
+                    // "name": <%=name%>,
+                    "email": "<%=name%>",
+                    "contact": "<%=phone%>"
+                },
+                "notes": {
+                    "address": "Razorpay Corporate Office"
+                },
+                "theme": {
+                    "color": "#F37254"
+                }
+            };
+            var rzp1 = new Razorpay(options);
+            document.getElementById('rzp-button1').onclick = function(e){
+                rzp1.open();
+                // console.log("handler");
+                e.preventDefault();
+            }
+
+            </script> 
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+  <%- include('partials/footer.ejs') %>
+
+
+
+
+
+
+
+  

@@ -1,0 +1,822 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Education</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+		rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/stylecat.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<style>
+	.fa {
+		/* padding: 20px; */
+		font-size: 25px;
+		width: 30px;
+		text-align: center;
+		text-decoration: none;
+		/* margin: 5px 2px; */
+		border-radius: 50%;
+	  }
+	  
+	  .fa:hover {
+		  opacity: 0.7;
+	  }
+	  
+	  .fa-facebook {
+		background: #3B5998;
+		color: white;
+		/* padding-left: 10px; */
+		text-align: center;
+	  }
+	  .fa-twitter {
+		background: #55ACEE;
+		color: white;
+	  }
+	  
+	  .fa-whatsapp{
+	  background: green;
+		color: white;
+	  }
+	  .fa-linkedin {
+		background: #007bb5;
+		color: white;
+	  }
+	  
+			  .col-md-5 {
+		/* background-color: white; */
+		background: transparent;
+		max-height: 400px;
+		overflow: scroll;
+	  }
+	  .tooltip {
+		background-color: lightgreen;
+		opacity: 0.8;
+		color: black;
+		/* padding: 16px 20px; */
+		border: none;
+		cursor: pointer;
+		opacity: 0.8;
+		position: fixed;
+		bottom: 150px;
+		/* right: 28px; */
+		/* width: 280px; */
+	  }
+	  
+	  .tooltip2 {
+		background-color: lightgreen;
+		opacity: 0.8;
+		color: black;
+		/* padding: 16px 20px; */
+		border: none;
+		cursor: pointer;
+		opacity: 0.8;
+		position: fixed;
+		bottom: 115px;
+		/* right: 28px; */
+		/* width: 280px; */
+	  }
+	  
+	  .tooltip .tooltiptext {
+		visibility: hidden;
+		width: 120px;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px 0;
+	  
+		/* Position the tooltip */
+		position: absolute;
+		z-index: 1;
+	  }
+	  
+	  .tooltip:hover .tooltiptext {
+		visibility: visible;
+	  }
+
+
+
+</style>
+
+
+
+</head>
+
+<body>
+	<!--navbar top starts-->
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="top">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-right">
+							<p class="site">www.xyx.@.in</p>
+
+							<ul class="">
+								<li >
+									
+									<a href="#" class="twitter"><i class="fa fa-twitter" ></i></a>
+									<a href="https://www.facebook.com/STEAMEDUCATIO/" ><i class="fa fa-facebook"></i></a>
+									<a href="https://api.whatsapp.com/send?phone=919889465869" ><i class="fa fa-whatsapp"></i></a>
+									<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+								
+							</li>
+								
+									<% if(!currentUser){ %> 
+									<a href="/login"><button id="myBtn"class="btn btn-warning">Login</button></a>
+									<% } else{ %>
+										<li><a href="/user/<%= currentUser._id %>" ><strong ><%= currentUser.name %></em></strong></a></li>
+										 <a href="/logout" class="btn btn-warning">Logout</a>
+									   <%	} %>
+									<!-- <% if(!currentUser){ %>  
+										<li><a href="#" class="btn btn-warning" style="color: white; font-weight: 600;height: 100%;" id="loginbtn"><i class="fa fa-user"></i> Log In</a></li>
+								
+										 <% } else{ %>
+										  <li><a href="/user/<%= currentUser._id %>" style="color: #083f88;"><strong><em><%= currentUser.name %></em></strong></a></li>
+										 <li><a href="/logout">Logout</a></li>
+									   <%	} %> -->
+								<!-- <div id="myModal" class="modal">
+								<div class="modal-content">
+									<span class="close">&times;</span>
+								   <form>
+								  <div class="form-group">
+									<p style="text-align:Left;"><b>Username</b></p>
+									<input style="background-color: white;" type="email" class="form-control" id="email" placeholder="Enter email">
+									
+								  </div>
+								  <div class="form-group">
+									<p style="text-align:Left;"><b>Password</b></p>
+									<input style="background-color: white;"type="password" class="form-control" id="pass" placeholder="Password">
+								  </div>
+								  
+								  <button type="submit" class="btn btn-warning">Login</button>
+								  <div class="form-group form-check">
+								     <p>Don't have a account?<a style="color: blue;" href="#">Register Here</a></p>
+								  </div>
+								</form>
+								</div>
+							</div> -->
+							<div id="loginbox" style="max-height: 310px;z-index: 9999;position:fixed;top:10%;right: 10%;display: none;background-color: white;padding: 20px;border-radius: 4px;">
+								<span id="cl" style="float: right;color: black; cursor: pointer;"><i class="icofont-remove">X</i></span>
+								<form action="/login" method="POST">
+								  <div class="form-group">
+									<label for="Deligate Name1">Username</label>
+									<input type="email" class="form-control" id="Deligate Name1" name="username" placeholder="Email" required>
+								  </div>
+								  <div class="form-group">
+									<label for="Deligate Name2">Password</label>
+									<input type="password" class="form-control" id="Deligate Name2" name="password" placeholder="password" required>
+								  </div>
+								  
+							  
+								  <button type="submit" class="btn btn-warning" style="color:white;">LogIn</button>
+								</form>
+								<br>
+								<h6>Don't have an account? <a href="/register">Register Here</a></h6>
+							  </div>
+						</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="top-menu">
+				<div class="container">
+					<img src="images/logo.png" width="60px" height="60px" style="float:left" />
+					<div class="row">
+						
+						<div class="col-xs-3">
+							<!-- <img src="images/logo.png" width="60px" height="60px" style="float:left" /> -->
+							<div id="fh5co-logo" >
+								
+								<a href="index.html" >YantroMitra</a>
+							</div>
+						</div>
+						<div class="col-xs-6 text-right menu-1" style="float:right;">
+							<ul>
+								<!-- <li><a href="/">Home</a></li> -->
+								<li><a href="/about_us">About Us</a></li>
+								<li><a href="/team">Team</a></li>
+								
+									<% if(currentUser && currentUser.isAdmin == true){%>
+          
+										<li><a href="/admin" id="id1">Admin page<i class="icofont plus"></i></a></li>
+										
+						  
+										<% } if(currentUser && currentUser.isSchoolAdmin == true){%>
+									
+										  <li><a href="/schooladmin" id="id1">Admin page<i class="icofont plus"></i></a></li>
+										  <%}%>
+										  <% if(!currentUser){%>
+											<li><a href="/register">Get registered</a></li>
+											
+											<% }else if(currentUser && (currentUser.isSchoolAdmin == false && currentUser.isAdmin == false)){ %> 
+												<li><a href="your_final_courses" id="id1">Your dashboard</a></li>
+												<% }else if((currentUser.isSchoolAdmin == false)&&(currentUser.isAdmin == false)){%>
+													<li><a href="/register">Get registered</a></li>
+													<%}%>
+								
+							</ul>
+
+
+
+
+
+
+						</div>
+					</div>
+					<!-- <div class="row">
+						<div class="col-xs-2">
+							<div id="fh5co-logo"><a href="index.html"><img src="images/logo.png" width="60px"
+										height="60px"></i>YantroMitra<span></span></a></div>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
+							<ul>
+								<li><a href="/">Home</a></li>
+								<li><a href="/login">About Us</a></li>
+								<li><a href="#fh5co-blog">Team</a></li>
+								<li><a href="course_for_u">Course For You</a></li>
+								<li><a href="#fh5co-course-categories">Our Courses</a></li>
+							</ul>
+
+
+
+
+
+						
+					</div>
+				</div> -->
+
+			</div>
+	</div>
+	</nav>
+		<!--exp-->
+
+
+		<!--ends-->
+
+
+
+
+
+
+
+		<!-- /.navbar -->
+		<!--new navbar ends-->
+		<!--slider1 starts-->
+		<aside id="fh5co-hero">
+			<div class="flexslider">
+				<ul class="slides">
+					<li style="background-image: url(images/s1.jpeg);">
+						<div class="overlay-gradient"></div>
+						<div class="container">
+
+
+						</div>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<!--slider1 ends-->
+		<!--whycatatyantromitra-->
+<br><br><br>
+
+		<div><h1 align="center" style="color: blue;">-Why CLAT at YantroMitra-</h1></div>
+		<section class="site-section col-lg-10 center col-md-offset-1">
+			<div class="container">
+				<!-- <p id="why" >Why CLAT at YantroMitra?</p> -->
+				
+				<section class="school-features text-dark d-flex">
+
+					<div class="inner">
+					<div class="col-lg-1"></div>
+
+						<div class="media d-block feature text-center">
+							<div><i style="font-size: 100px;color:red;" class="fa fa-youtube-play"></i>
+					                                   </div>
+							<div class="media-body">
+								<h3 class="mt-0">Video Lectures</h3>
+								<p>Over 120+ Well researched, strategy rich and easy to understand video lectures.</p>
+							</div>
+						</div>
+
+						<div class="media d-block feature text-center">
+							<div><i style="font-size: 100px;color:blue;" class="fa fa-file-text"></i></div>
+							<div class="media-body">
+								<h3 class="mt-0">Full Length Mocks</h3>
+								<p>Over 25+ full length Mocks designed by experts to help you prepare for actual exam.</p>
+							</div>
+						</div>
+
+
+						<div class="media d-block feature text-center">
+							<div><i style="font-size: 100px;color:green;" class="fa fa-list"></i></div>
+							<div class="media-body">
+								<h3 class="mt-0">Sectional and Practice Tests</h3>
+								<p>Over 300+ tests to help you identify and improve on weak areas and excel at strong sections.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="school-features text-dark last d-flex">
+
+					<div class="inner">
+						<div class="col-sm-1"></div>
+						
+
+						<div class="media d-block feature text-center">
+							<div><i style="font-size: 100px;color:palevioletred;" class="fa fa-book"></i></div>
+							<div class="media-body">
+								<h3 class="mt-0">E- Books</h3>
+								<p>Delectus fuga voluptatum minus amet, mollitia distinctio assumenda voluptate quas
+									repellat eius quisquam odio. Aliquam, laudantium, optio? Error velit, alias.</p>
+							</div>
+						</div>
+
+						<div class="media d-block feature text-center">
+							<div><i style="font-size: 100px;color:orange;" class="fa fa-bullhorn"></i></div>
+							<div class="media-body">
+								<h3 class="mt-0">Alerts and Notifications</h3>
+								<p>Stay well informed with information of all national exams and dates.</p>
+							</div>
+						</div>
+
+
+						<div class="media d-block feature text-center">
+							<div><i style="font-size: 100px;color:peru;" class="fa fa-bookmark"></i></div>
+							<div class="media-body">
+								<h3 class="mt-0">GK Capsule and E-magazine</h3>
+								<p>Designed to help you stay abreast with all the general knowledge with extensive coverage of current afairs in an audio-visual format.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+			</div>
+		</section>
+	<!--ends-->
+		
+		<br>
+		<div id="fh5co-testimonial" style="background-image: url(images/school.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+						<h2><span>About CLAT</span></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="row animate-box">
+
+						
+
+								
+										<p class="about">&ldquo;The entrance season is right around the corner, and we know how crucial this stage is for each one of you. Choosing the right career path is one the most difficult and important decision in every student’s life. One of the leading professions has continued to be the legal one. Law remains to be one of the well respected degrees around the globe. This is a profession for the ones who don’t hesitate in putting forward their points, have exceptional debate skills and the patience to memorize every act and amendment to ever exist. 
+											If you are aspiring to live that exciting and lavish life on a lawyer, its time to start preparing and getting familiar with everything related to the profession! Don’t worry, you’ve reached the right place. Here’s all you need to know:
+											</p>
+								<a href="#">Read More</a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+	</div>
+	<br/>
+	<div align="center"><h2><span style="color: rgb(73, 100, 218);">-OUR CLAT COURSES-</span></h2></div>
+	<!--our courese ends-->
+	<!--take 3-->
+	<div class="con col-md-12 col-md-offset-1">
+		<div class="row">
+			
+        <div class="card col-md-3">
+            <div class="face face1">
+                <div class="content">
+                    <div class="ico">
+						<i id="ic"><b><p>CLAT-Long</p><p align="center">Term</p></b></i>
+						
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                   
+                    <p><ul>
+						<li>300 Video Lessons </li>
+						<li>120 Live Video Sessions</li>
+						<li>80 Sectional Tests and explanation.</li>
+						<li>20 Mock Tests </li>
+						<li>Current Affairs Online Sessions.</li>
+						<li>Current Affairs Bulletins</li>
+						<li>EText Books</li>
+						<li>8 Months Access Duration </li>
+
+					</ul>
+				<b style="color:red;font-size: 25px;">Rs 8000</b>
+                    <br>
+                    <form action="/add_to_cart" method="POST">
+                    <button id="bot" style="vertical-align:middle"><span>Buy Now</span></button>
+                        <input type="hidden" name="course_name" value="CLAT- Long Term">
+                        <input type="hidden" name="course_code" value="a1c6">
+                        <input type="hidden" name="course_price" value="8000">
+                    </form>
+                    <form action="/details_of_individualcourse" method="POST">
+                    <button id="bot" style="vertical-align:middle"><span>View More</span></button>
+                    <input type="hidden" name="course_name" value="CLAT- Long Term">
+                    </form>
+				</p>
+				
+                </div>
+            </div>
+		</div>
+		<div class="col-md-1"></div>
+        <div class="card col-md-3">
+            <div class="face face1">
+                <div class="content">
+                    <div class="ico">
+                        <i id="ic"><b><p>CLAT-Medium</p><p align="center">Term</p></b></i>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                   
+                    <p><ul>
+						<li>250 Video Lessons </li>
+						<li>60 Live Video Sessions</li>
+						<li>50 Sectional Tests and explanation.</li>
+						<li>14 Mock Tests </li>
+						<li>Current Affairs Online Sessions.</li>
+						<li>Current Affairs Bulletins</li>
+						<li>E- Text Books</li>
+						<li>6 Months Access Duration </li>
+
+					</ul>
+				<b style="color:red;font-size: 25px;">Rs 6000</b>
+                    <br>
+                    <form action="/add_to_cart" method="POST">
+                    <button id="bot" style="vertical-align:middle"><span>Buy Now</span></button>
+                        <input type="hidden" name="course_name" value="CLAT- Medium Term">
+                        <input type="hidden" name="course_code" value="">
+                        <input type="hidden" name="course_price" value="6000">
+                    </form>
+                    <form action="/details_of_individualcourse" method="POST">
+                    <button id="bot" style="vertical-align:middle"><span>View More</span></button>
+                    <input type="hidden" name="course_name" value="CLAT- Medium Term">
+                    </form>
+				</p>
+				
+                </div>
+            </div>
+		</div>
+		<div class="col-md-1"></div>
+        <div class="card col-md-3">
+            <div class="face face1">
+                <div class="content">
+                    <div class="ico">
+						<i id="ic"><b><p>CLAT-Short</p><p align="center">Term</p></b></i>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+					<p><ul>
+						<li>250 Video Lessons</li>
+						<li>45 Live Video Sessions</li>
+						<li>50 Sectional Tests and explanation.</li>
+						<li>14 Mock Tests</li>
+						<li>Additional Scholarships on:Past CAT %ile</li>
+						<li>Current Affairs Online Sessions.</li>
+						<li>Current Affairs Bulletins</li>
+						<li>3 Months Access Duration </li>
+
+					</ul>
+				<b style="color:red;font-size: 25px;">Rs 4000</b>
+					<br>
+					<br>
+                    <form action="/add_to_cart" method="POST">
+                    <button id="bot" style="vertical-align:middle"><span>Buy Now</span></button>
+                        <input type="hidden" name="course_name" value="CLAT- Short Term">
+                        <input type="hidden" name="course_code" value="a1c2">
+                        <input type="hidden" name="course_price" value="4000">
+                    </form>
+                    <form action="/details_of_individualcourse" method="POST">
+                    <button id="bot" style="vertical-align:middle"><span>View More</span></button>
+                    <input type="hidden" name="course_name" value="CLAT– Short Term">
+                    </form>
+				
+				</p>
+                </div>
+            </div>
+		</div>
+		<div class="card col-md-3">
+            <div class="face face1">
+                <div class="content">
+                    <div class="ico">
+						<i id="ic"><b><p>CLAT-One</p><p align="center">Term</p></b></i>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+					<p><ul>
+						<li>250 Video Lessons </li>
+						<li>30 Live Video Sessions</li>
+						<li>50 Sectional Tests and explanation.</li>
+						<li>7 Mock Tests </li>
+						<li>Current Affairs Online Sessions</li>
+						<li>Current Affairs Bulletins</li>
+						<li>E- Text Books</li>
+						<li>1 Month Access Duration</li>
+
+					</ul>
+				<b style="color:red;font-size: 25px;">Rs 3000</b>
+					<br>
+					<br>
+                    <form action="/add_to_cart" method="POST">
+                    <button id="bot" style="vertical-align:middle"><span>Buy Now</span></button>
+                        <input type="hidden" name="course_name" value="CLAT- One Month">
+                        <input type="hidden" name="course_code" value="">
+                        <input type="hidden" name="course_price" value="3000">
+                    </form>
+                    <form action="/details_of_individualcourse" method="POST">
+                    <button id="bot" style="vertical-align:middle"><span>View More</span></button>
+                    <input type="hidden" name="course_name" value="CLAT- One Month">
+                    </form>
+				
+				</p>
+                </div>
+            </div>
+		</div>
+		
+		<div class="col-md-1"></div>
+		<div class="card col-md-3">
+            <div class="face face1">
+                <div class="content">
+                    <div class="ico">
+						<i id="ic"><b><p align="center">CLAT-Tests</p><p align="center">Series Express</p></b></i>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+					<p><ul>
+						<li>12 - Mock Tests</li>
+						<li>20 - Practice Tests</li>
+						<li>70 - Sectional Tests </li>
+						<li>14 Mock Tests</li>
+						<li>Test Analysis Sessions live and Video Sessions.</li>
+
+					</ul>
+				<b style="color:red;font-size: 25px;">Rs 750</b>
+					<br>
+					<br>
+                    <form action="/add_to_cart" method="POST">
+                    <button id="bot" style="vertical-align:middle"><span>Buy Now</span></button>
+                        <input type="hidden" name="course_name" value="CLAT-Tests Series Express">
+                        <input type="hidden" name="course_code" value="">
+                        <input type="hidden" name="course_price" value="750">
+                    </form>
+                    <form action="/details_of_individualcourse" method="POST">
+                    <button id="bot" style="vertical-align:middle"><span>View More</span></button>
+                    <input type="hidden" name="course_name" value="CLAT-Tests Series Express">
+                    </form>
+				
+				</p>
+                </div>
+            </div>
+		</div>
+		</div>
+    </div>
+
+
+	<!--take 3 ends-->
+	<br>
+	<br>
+	<footer class="col-xs-12" id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row row-pb-md">
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Course &amp; Categories</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Physics</a></li>
+						<li><a href="#">Maths</a></li>
+						<li><a href="#">Chemistry</a></li>
+						<li><a href="#">Artificial</a></li>
+						<li><a href="#">Software</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Available &amp; Courses</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">web development</a></li>
+						<li><a href="#">Jee</a></li>
+						<li><a href="#">SSC</a></li>
+						<li><a href="#">NEET</a></li>
+
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Browse By Categories</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">All Courses</a></li>
+						<li><a href="#">All Instructors</a></li>
+						<li><a href="#">All Members</a></li>
+						<li><a href="#">All Groups</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-3 fh5co-widget">
+
+				</div>
+				<div class="col-md-3 fh5co-widget">
+					<h3>Contact</h3>
+					<p><i class="fa fa-address-book-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+						Address will come here</p>
+					<ul class="fh5co-footer-links">
+						<li><i class="fa fa-anchor"></i>&nbsp;&nbsp;&nbsp;&nbsp;Bangalore 560078 - India
+						</li>
+						<li><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;+91 1234567890</li>
+						<li><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;xyz@gmail.com</li>
+
+					</ul>
+
+
+				</div>
+
+
+				<div class="col-xs-12">
+					<nav class="navbar navbar-inverse">
+						<div class="container-fluid">
+							<div class="navbar-header">
+
+							</div>
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-address-book-o"></i></a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-github"></i></a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#"><span></span>YantroMitra</a></li>
+
+							</ul>
+						</div>
+					</nav>
+				</div>
+
+
+
+			</div>
+	</footer>
+
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Count Down -->
+	<script src="js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	<script>
+		var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate()
+		});
+
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			enableUtc: false
+		});
+
+		jQuery(document).ready(function ($) {
+			$('.x-nav-wrap.mobile a').on('touchstart', function (e) {
+				$('.x-nav-wrap.mobile').click();
+			});
+		});
+
+
+
+
+
+
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		myBtn.onclick = function () {
+			modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function () {
+			modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+
+		// Get the modal
+		var modal = document.getElementById('myModal');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+
+	</script>
+</body>
+
+</html>

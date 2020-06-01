@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs') %>
+<div id="login-box">
+    <div class="leftbox" id="test">
+      <h1>Sign up</h1>
+      <form action="/preregister" method="POST" class="register">
+            <br><br>
+        <input class="signup" type="email" name="email" placeholder="E-mail" required/>
+        <button id="myBtn">submit</button>
+        
+      </form>
+    </div>
+</div>
+  
+<script>
+    myBtn.onclick = function() {
+	alert("An OTP has been sent to your mail id");
+  loginbox.style.display = "block";
+}
+</script>
+
+
+
+
+  <%- include('partials/footer.ejs') %>
+
+
+
+
+
+
+
+  

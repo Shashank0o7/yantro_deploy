@@ -1,0 +1,534 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Education</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel = "icon" href =  "assets/images/ylogo.png" type = "image/x-icon"> 
+
+
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+		rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<style>
+
+
+.fa {
+  /* padding: 20px; */
+  font-size: 25px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  /* margin: 5px 2px; */
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  /* padding-left: 10px; */
+  text-align: center;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-whatsapp{
+background: green;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+		.col-md-5 {
+  /* background-color: white; */
+  background: transparent;
+  max-height: 400px;
+  overflow: scroll;
+}
+.tooltip {
+  background-color: lightgreen;
+  opacity: 0.8;
+  color: black;
+  /* padding: 16px 20px; */
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 150px;
+  /* right: 28px; */
+  /* width: 280px; */
+}
+
+.tooltip2 {
+  background-color: lightgreen;
+  opacity: 0.8;
+  color: black;
+  /* padding: 16px 20px; */
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 115px;
+  /* right: 28px; */
+  /* width: 280px; */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.dropbtn {
+  /* background-color: #4CAF50; */
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #45CE30;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: lightgreen;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+
+
+	</style>
+
+
+
+
+
+
+</head>
+
+<body>
+	<!--navbar top starts-->
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="top">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-right">
+							<p class="site">www.xyx.@.in</p>
+
+							<ul class="">
+								<li >
+									
+									<a href="#" class="twitter"><i class="fa fa-twitter" ></i></a>
+									<a href="https://www.facebook.com/STEAMEDUCATIO/" ><i class="fa fa-facebook"></i></a>
+									<a href="https://api.whatsapp.com/send?phone=919889465869" ><i class="fa fa-whatsapp"></i></a>
+									<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+								
+							</li>
+								
+									<% if(!currentUser){ %> 
+									<a href="#"><button id="myBtn"class="btn btn-warning">Login</button></a>
+									<% } else{ %>
+										<li><a href="/user/<%= currentUser._id %>" ><strong ><%= currentUser.name %></em></strong></a></li>
+										 <a href="/logout" class="btn btn-warning">Logout</a>
+									   <%	} %>
+									<!-- <% if(!currentUser){ %>  
+										<li><a href="#" class="btn btn-warning" style="color: white; font-weight: 600;height: 100%;" id="loginbtn"><i class="fa fa-user"></i> Log In</a></li>
+								
+										 <% } else{ %>
+										  <li><a href="/user/<%= currentUser._id %>" style="color: #083f88;"><strong><em><%= currentUser.name %></em></strong></a></li>
+										 <li><a href="/logout">Logout</a></li>
+									   <%	} %> -->
+								<!-- <div id="myModal" class="modal">
+								<div class="modal-content">
+									<span class="close">&times;</span>
+								   <form>
+								  <div class="form-group">
+									<p style="text-align:Left;"><b>Username</b></p>
+									<input style="background-color: white;" type="email" class="form-control" id="email" placeholder="Enter email">
+									
+								  </div>
+								  <div class="form-group">
+									<p style="text-align:Left;"><b>Password</b></p>
+									<input style="background-color: white;"type="password" class="form-control" id="pass" placeholder="Password">
+								  </div>
+								  
+								  <button type="submit" class="btn btn-warning">Login</button>
+								  <div class="form-group form-check">
+								     <p>Don't have a account?<a style="color: blue;" href="#">Register Here</a></p>
+								  </div>
+								</form>
+								</div>
+							</div> -->
+							<div id="loginbox" style="max-height: 310px;z-index: 9999;position:fixed;top:10%;right: 10%;display: none;background-color: white;padding: 20px;border-radius: 4px;">
+								<span id="cl" style="float: right;color: black; cursor: pointer;"><i class="icofont-remove">X</i></span>
+								<form action="/login" method="POST">
+								  <div class="form-group">
+									<label for="Deligate Name1">Username</label>
+									<input type="email" class="form-control" id="Deligate Name1" name="username" placeholder="Email" required>
+								  </div>
+								  <div class="form-group">
+									<label for="Deligate Name2">Password</label>
+									<input type="password" class="form-control" id="Deligate Name2" name="password" placeholder="password" required>
+								  </div>
+								  
+							  
+								  <button type="submit" class="btn btn-warning" style="color:white;">LogIn</button>
+								</form>
+								<br>
+								<h6>Don't have an account? <a href="/register">Register Here</a></h6>
+							  </div>
+						</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="top-menu">
+				<div class="container">
+					<img src="images/logo.png" width="60px" height="60px" style="float:left" />
+					<div class="row">
+						
+						<div class="col-xs-3">
+							<!-- <img src="images/logo.png" width="60px" height="60px" style="float:left" /> -->
+							<div id="fh5co-logo" >
+								
+								<a href="index.html" >YantroMitra</a>
+							</div>
+						</div>
+						<div class="col-xs-6 text-right menu-1" style="float:right;">
+							<ul>
+								<!-- <li><a href="/">Home</a></li> -->
+								<li><a href="about_us">About Us</a></li>
+								<li><a href="/team">Team</a></li>
+								
+									<% if(currentUser && currentUser.isAdmin == true){%>
+          
+										<li><a href="/admin" id="id1">Admin page<i class="icofont plus"></i></a></li>
+										
+						  
+										<% } if(currentUser && currentUser.isSchoolAdmin == true){%>
+									
+										  <li><a href="/schooladmin" id="id1">Admin page<i class="icofont plus"></i></a></li>
+										  <%}%>
+										  <% if(!currentUser){%>
+											<li><a href="/register">Get registered</a></li>
+											
+											<% }else if(currentUser && (currentUser.isSchoolAdmin == false && currentUser.isAdmin == false)){ %> 
+												<li><a href="your_final_courses" id="id1">Your dashboard</a></li>
+												<% }else if((currentUser.isSchoolAdmin == false)&&(currentUser.isAdmin == false)){%>
+													<li><a href="/register">Get registered</a></li>
+                                                    <%}%>
+                                <li><a href="/">Home</a></li>
+								
+							</ul>
+
+
+
+
+
+
+						</div>
+					</div>
+					<!-- <div class="row">
+						<div class="col-xs-2">
+							<div id="fh5co-logo"><a href="index.html"><img src="images/logo.png" width="60px"
+										height="60px"></i>YantroMitra<span></span></a></div>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
+							<ul>
+								<li><a href="/">Home</a></li>
+								<li><a href="/login">About Us</a></li>
+								<li><a href="#fh5co-blog">Team</a></li>
+								<li><a href="course_for_u">Course For You</a></li>
+								<li><a href="#fh5co-course-categories">Our Courses</a></li>
+							</ul>
+
+
+
+
+
+						
+					</div>
+				</div> -->
+
+			</div>
+	</div>
+	</nav>
+	<!--exp-->
+	
+
+	<!--ends-->
+    <div class="container" style="max-width:700px;">
+    <h1 align="center">ABOUT US</h1>
+    <p style="color: black;">
+        YantroMitra is a devoted EduTech company with specialized in Entrance Exams Coaching, K-12 Coaching and STEAM Education. Students here proceed themselves in experiential learning, persists in problem solving, embrace collaboration, and work through the creative process. We possess the leaders, innovators, educators and learners of 21st century.
+    </p>
+    <p style="color: black;">
+        The man behind this munificent intension, our very Director of this EduTech company, Mr. Purushottam M. Kulkarni a young executive who begun his entrepreneurship in 2009 after his M.B.A from IBS, in this field of education, with the franchise Career Forum Pvt Ltd, Pune, for Hubli. He owns an experience of training 10,000+ students in various fields counting science and technologies, banks and other entrance exams. He is a thoughtful person whose belief his perception and goals. He configured the idea of YantroMitra and started with the goal of guiding the children to visualize their theoretical concepts and career guidelines    
+    </p>
+    <p style="color: black;">
+        YantroMitra’s faculty members who are associated with us have an experience of training more than 8000+ students collectively, in various Entrance Exams and STEAM education. Our company is diversifying and entering into new areas. We also have alumnus from National Law University to the professionals from distinct B schools
+    </p>
+    <p style="color: black;">
+        Student here have the benefit of learning and exploring themselves into the T3 methodology i.e. (Theory, Techniques, Tasks). We assist the students for diverse entrance exams that vary widely across the different states and universities/institutes. For instance, we guide the students who are keen to be a part of the National Law Universities providing them all the sources and leading them to crack the CLAT exam. YantroMitra also provides us from Portrait to Paper Pulsing, from Drone to 3D Printer, from I.O.T to Water Base concepts; we possess everything for our children who want to strike the ongoing competition with their knowledge and skills.
+    </p>
+    </div>
+
+
+
+
+
+	<!--send message ends-->
+	
+
+	<!--take 3 ends-->
+	<br>
+	<br>
+	<footer class="col-xs-12" id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row row-pb-md">
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Course &amp; Categories</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Entrance Exams Courses</a></li>
+						<li><a href="#">School Level Courses</a></li>
+						<li><a href="#">STEM Education</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Available &amp; Courses</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">BANK</a></li>
+						<li><a href="#">CLAT</a></li>
+						<li><a href="#">CRT</a></li>
+						<li><a href="#">CMAT</a></li>
+
+					</ul>
+				</div>
+
+				
+
+				<div class="col-md-3 fh5co-widget" style="margin-right:0">
+
+				</div>
+				<div class="col-md-3 fh5co-widget">
+					<h3>Contact</h3>
+					<p><i class="fa fa-address-book-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+						Address will come here</p>
+					<ul class="fh5co-footer-links">
+						<li><i class="fa fa-anchor"></i>&nbsp;&nbsp;&nbsp;&nbsp;Bangalore 560078 - India
+						</li>
+						<li><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;+91 1234567890</li>
+						<li><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;xyz@gmail.com</li>
+
+					</ul>
+
+
+				</div>
+
+
+				<div class="col-xs-12">
+					<nav class="navbar navbar-inverse">
+						<div class="container-fluid">
+							<div class="navbar-header">
+
+							</div>
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-address-book-o"></i></a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-github"></i></a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#"><span></span>YantroMitra</a></li>
+
+							</ul>
+						</div>
+					</nav>
+				</div>
+
+
+
+			</div>
+	</footer>
+
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Count Down -->
+	<script src="js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	<script>
+		var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate()
+		});
+
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			enableUtc: false
+		});
+
+		jQuery(document).ready(function($){
+	$('.x-nav-wrap.mobile a').on('touchstart', function(e) {
+		$('.x-nav-wrap.mobile').click();
+	});
+});
+
+	
+
+
+
+
+		// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+myBtn.onclick = function() {
+	alert("LOGIN WITH YOUR GOOGLE EMAIL ID USED IN YOUTUBE");
+  loginbox.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+	</script>
+</body>
+
+</html>

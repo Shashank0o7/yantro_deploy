@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Form </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      body{
+          background: #43C6AC;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      }
+</style>
+  </head>
+<body>
+    
+    <br>
+    <br>
+    <h4 style="text-align: center;">Add New Course and Its Code!</h4>
+    <br>
+    <div class="container" style="width: 70%;">
+    <form action="/createcourse" method="POST">
+        <div class="form-group">
+          <!-- <label for="exampleInputEmail1">Course Code</label>
+          <select name="course[code]">
+            <option value="SLC" selected>SLC*</option>
+            <option value="CLC">CLC</option>
+          </select>
+          <p><strong>where SLC="School Level Course" and CLC="College Level Course" </strong></p> -->
+          <input type="text" class="form-control"  name="course[code]" placeholder="enter code for course" required>
+          <p>Type course as <b>s1c1c1</b> for schools and <b>a1c1</b> for Yantromitra's courses</p>
+          <p>s1-<b>1st school</b>  c1-<b>class1</b> c1-<b>course1</b></p>
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Class Code</label>
+          <select name="course[classcode]">
+            
+            <option value="none" selected>none</option>
+            
+            <option value="class1" >class1</option>
+            <option value="class2">class2</option>
+            <option value="class3">class3</option>
+            <option value="class4">class4</option>
+            <option value="class5">class5</option>
+            <option value="class6">class6</option>
+            <option value="class7">class7</option>
+            <option value="class8">class8</option>
+            <option value="class9">class9</option>
+            <option value="class10">class10</option>
+            <option value="class11">class11</option>
+            <option value="class12">class12</option>
+           
+          </select>
+          <p><strong>Choose none if you are Yantromitra </strong></p>
+
+          <!-- <label for="exampleInputPassword1">Course's Name</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="course[classcode]" required>
+          <p><strong>WRITE IT IN SMALL LETTERS </strong></p> -->
+
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Course's Name</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="course[name]" required>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control"  name="course[course_detail]" placeholder="enter details of course" >
+        </div>
+        <% if(currentUser.isAdmin!=true){%>
+        <div class="form-group">
+          <input type="text" class="form-control"  name="course[school_name]" placeholder="enter school/college name or else enter none" required>
+        </div>
+        <%}else{%>
+          <input type="hidden" class="form-control"  name="course[school_name]" placeholder="enter school/college name or else enter none" value="none">
+          <%}%>
+        <div class="form-group">
+          <input type="text" class="form-control"  name="course[price]" placeholder="enter price of the course" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

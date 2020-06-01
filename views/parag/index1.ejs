@@ -1,0 +1,916 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Education</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel = "icon" href =  "assets/images/ylogo.png" type = "image/x-icon"> 
+
+
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+		rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<style>
+
+
+.fa {
+  /* padding: 20px; */
+  font-size: 25px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  /* margin: 5px 2px; */
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  /* padding-left: 10px; */
+  text-align: center;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-whatsapp{
+background: green;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+		.col-md-5 {
+  /* background-color: white; */
+  background: transparent;
+  max-height: 400px;
+  overflow: scroll;
+}
+.tooltip {
+  background-color: lightgreen;
+  opacity: 0.8;
+  color: black;
+  /* padding: 16px 20px; */
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 150px;
+  /* right: 28px; */
+  /* width: 280px; */
+}
+
+.tooltip2 {
+  background-color: lightgreen;
+  opacity: 0.8;
+  color: black;
+  /* padding: 16px 20px; */
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 115px;
+  /* right: 28px; */
+  /* width: 280px; */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.dropbtn {
+  /* background-color: #4CAF50; */
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #45CE30;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: lightgreen;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+
+
+	</style>
+
+
+
+
+
+
+</head>
+
+<body>
+	<!--navbar top starts-->
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="top">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-right">
+							<p class="site">www.xyx.@.in</p>
+
+							<ul class="">
+								<li >
+									
+									<a href="#" class="twitter"><i class="fa fa-twitter" ></i></a>
+									<a href="https://www.facebook.com/STEAMEDUCATIO/" ><i class="fa fa-facebook"></i></a>
+									<a href="https://api.whatsapp.com/send?phone=919889465869" ><i class="fa fa-whatsapp"></i></a>
+									<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+								
+							</li>
+								
+									<% if(!currentUser){ %> 
+									<a href="#"><button id="myBtn"class="btn btn-warning">Login</button></a>
+									<% } else{ %>
+										<li><a href="/user/<%= currentUser._id %>" ><strong ><%= currentUser.name %></em></strong></a></li>
+										 <a href="/logout" class="btn btn-warning">Logout</a>
+									   <%	} %>
+									<!-- <% if(!currentUser){ %>  
+										<li><a href="#" class="btn btn-warning" style="color: white; font-weight: 600;height: 100%;" id="loginbtn"><i class="fa fa-user"></i> Log In</a></li>
+								
+										 <% } else{ %>
+										  <li><a href="/user/<%= currentUser._id %>" style="color: #083f88;"><strong><em><%= currentUser.name %></em></strong></a></li>
+										 <li><a href="/logout">Logout</a></li>
+									   <%	} %> -->
+								<!-- <div id="myModal" class="modal">
+								<div class="modal-content">
+									<span class="close">&times;</span>
+								   <form>
+								  <div class="form-group">
+									<p style="text-align:Left;"><b>Username</b></p>
+									<input style="background-color: white;" type="email" class="form-control" id="email" placeholder="Enter email">
+									
+								  </div>
+								  <div class="form-group">
+									<p style="text-align:Left;"><b>Password</b></p>
+									<input style="background-color: white;"type="password" class="form-control" id="pass" placeholder="Password">
+								  </div>
+								  
+								  <button type="submit" class="btn btn-warning">Login</button>
+								  <div class="form-group form-check">
+								     <p>Don't have a account?<a style="color: blue;" href="#">Register Here</a></p>
+								  </div>
+								</form>
+								</div>
+							</div> -->
+							<div id="loginbox" style="max-height: 310px;z-index: 9999;position:fixed;top:10%;right: 10%;display: none;background-color: white;padding: 20px;border-radius: 4px;">
+								<span id="cl" style="float: right;color: black; cursor: pointer;"><i class="icofont-remove">X</i></span>
+								<form action="/login" method="POST">
+								  <div class="form-group">
+									<label for="Deligate Name1">Username</label>
+									<input type="email" class="form-control" id="Deligate Name1" name="username" placeholder="Email" required>
+								  </div>
+								  <div class="form-group">
+									<label for="Deligate Name2">Password</label>
+									<input type="password" class="form-control" id="Deligate Name2" name="password" placeholder="password" required>
+								  </div>
+								  
+							  
+								  <button type="submit" class="btn btn-warning" style="color:white;">LogIn</button>
+								</form>
+								<br>
+								<h6>Don't have an account? <a href="/register">Register Here</a></h6>
+							  </div>
+						</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="top-menu">
+				<div class="container">
+					<img src="images/logo.png" width="60px" height="60px" style="float:left" />
+					<div class="row">
+						
+						<div class="col-xs-3">
+							<!-- <img src="images/logo.png" width="60px" height="60px" style="float:left" /> -->
+							<div id="fh5co-logo" >
+								
+								<a href="index.html" >YantroMitra</a>
+							</div>
+						</div>
+						<div class="col-xs-6 text-right menu-1" style="float:right;">
+							<ul>
+								<!-- <li><a href="/">Home</a></li> -->
+								<li><a href="about_us">About Us</a></li>
+								<li><a href="/team">Team</a></li>
+								
+									<% if(currentUser && currentUser.isAdmin == true){%>
+          
+										<li><a href="/admin" id="id1">Admin page<i class="icofont plus"></i></a></li>
+										
+						  
+										<% } if(currentUser && currentUser.isSchoolAdmin == true){%>
+									
+										  <li><a href="/schooladmin" id="id1">Admin page<i class="icofont plus"></i></a></li>
+										  <%}%>
+										  <% if(!currentUser){%>
+											<li><a href="/register">Get registered</a></li>
+											
+											<% }else if(currentUser && (currentUser.isSchoolAdmin == false && currentUser.isAdmin == false)){ %> 
+												<li><a href="your_final_courses" id="id1">Your dashboard</a></li>
+												<% }else if((currentUser.isSchoolAdmin == false)&&(currentUser.isAdmin == false)){%>
+													<li><a href="/register">Get registered</a></li>
+													<%}%>
+								<li><a href="#fh5co-course-categories">Our Courses</a></li>
+							</ul>
+
+
+
+
+
+
+						</div>
+					</div>
+					<!-- <div class="row">
+						<div class="col-xs-2">
+							<div id="fh5co-logo"><a href="index.html"><img src="images/logo.png" width="60px"
+										height="60px"></i>YantroMitra<span></span></a></div>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
+							<ul>
+								<li><a href="/">Home</a></li>
+								<li><a href="/login">About Us</a></li>
+								<li><a href="#fh5co-blog">Team</a></li>
+								<li><a href="course_for_u">Course For You</a></li>
+								<li><a href="#fh5co-course-categories">Our Courses</a></li>
+							</ul>
+
+
+
+
+
+						
+					</div>
+				</div> -->
+
+			</div>
+	</div>
+	</nav>
+	<!--exp-->
+	
+
+	<!--ends-->
+
+
+
+
+
+
+
+	<!-- /.navbar -->
+	<!--new navbar ends-->
+	<!--slider1 starts-->
+	<aside id="fh5co-hero">
+		<div class="flexslider">
+			<ul class="slides">
+				<li style="background-image: url(images/s1.jpeg);">
+					<div class="overlay-gradient"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 text-center slider-text">
+								<div class="slider-text-inner">
+									<h1>WELCOME TO YANTROMITRA</h1>
+									<h2>We are an Ed tech and online totouring firm offering best online course and
+										classes
+										for various exams like jee mains jee advance etc</h2>
+									<p><a class="btn btn-primary btn-lg" href="#">Read More!</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li style="background-image: url(images/s2.jpeg);">
+					<div class="overlay-gradient"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 text-center slider-text">
+								<div class="slider-text-inner">
+									<h1>The Great Aim of Education is not Knowledge, But Action</h1>
+									<h2>We redefine teaching</h2>
+									<p><a class="btn btn-primary btn-lg btn-learn" href="/login">Start Learning Now!</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li style="background-image: url(images/s3.jpeg);">
+					<div class="overlay-gradient"></div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 text-center slider-text">
+								<div class="slider-text-inner">
+									<h1>We Help You to Learn New Things</h1>
+									<h2>This is the new way of learning</h2>
+									<p><a class="btn btn-primary btn-lg btn-learn" href="#">Start Learning Now!</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</aside>
+	<button class="tooltip" ><b>CONTACT US</b><span class="tooltiptext">+91 1234567890<p>xyz@gmail.com</p></span></button>
+	<br/>
+	<button class="tooltip2" ><a href="#demo"><b>DEMO CLASS</b></a><span class="tooltiptext"></span></button>
+	<!--slider1 ends-->
+	<!--categories-->
+	<div id="fh5co-course-categories">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Course categories</h2>
+					<p>The choices a person makes define him and his future</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 text-center animate-box">
+					<div class="services">
+						
+						<span class="icon">
+							<i class="fa fa-calculator"></i>
+						</span>
+						<div class="desc">
+							<div class="dropdown">
+							<h3><a href="#" class="dropbtn">Entrance Exams Courses</a></h3>
+							
+							<div align="center" class="dropdown-content">
+								<a href="/go_to_clat">CLAT</a>
+								<a href="/go_to_cmat">CMAT</a>
+								<a href="/go_to_bank">BANK</a>
+								<a href="/go_to_crt">CRT</a>
+								<a href="/go_to_nimcet">NIMCET</a>
+							</div>
+							<p>Competitive exams in India have moved a long way. They vary from Exam to Exam, State to State, and Course to Course. Hence a student requires a well coordinatted Training and Testing Mehod to gain proficiency in Time management and Problem solving.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 text-center animate-box">
+					<div class="services">
+						<a href="/course_for_u">
+						<span class="icon">
+							<i class="fa fa-book"></i>
+						</span></a>
+						<div class="desc">
+							<h3><a href="/course_for_u">School Level Courses</a></h3>
+							<p>The most happening and imbibing years of life are these. Developing Conceptual understanding and helping the Child to Visualize the concept is a unique Task that the Teacher and Mentor has to go through. We at YantroMitra take special care in making Concepts easy to understand and a great Learniing Experience.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 text-center animate-box">
+					<div class="services">
+						<span class="icon">
+							<i class="fa fa-thermometer-empty"></i>
+						</span>
+						<div class="desc">
+							<h3><a href="#">STEM Education</a></h3>
+							<p>Classroom Education has changed a lot from just a teaching approach to activity oriented interactive and group learning. YantroMitra haas thev experiennce in training thousands of kids in this age group. We have from Pottery to pulping, from Drones to 3D Printing, From Robots to Cars, complete curriiculum to help your childs growth.</p>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+	<!--categories ends-->
+	<div id="fh5co-course">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>INFORMATION Panel</h2>
+					<p>All you need to know</p>
+				</div>
+
+				<div class="col-md-5" style="border: 1px solid black;height:80%">
+					
+
+						<div class="section-title" >
+						  
+						  <h2 align="center">Notification</h2>
+						  <hr style="width:8%;opacity:0.95;">
+						</div>
+					 
+						<!-- <div class="row" style="border: 2px solid rgba(0,0, 0, 0.3); margin: 0 auto;display: flex;overflow-y: auto;overflow-x: hidden;"> -->
+						  <div class="col-lg-12 col-md-12 col-sm-12" style="margin-top: 1.5%;margin-left: 1.5%;">
+						   <h5 style="color: #083f88;"> <i class="fa fa-newspaper" style="color: #083f88;font-weight: 700;"></i><strong> Notification/News</strong> </h5>
+						   <hr style="">
+						   <%not.forEach(function(not){%>
+							<a href="<%=not.link%>" style="text-decoration: none;color: black;"><h6><i class="fa fa-bell" style="color: darkred;"></i> <%=not.message%></h6></a>
+							<% if(currentUser && (currentUser.isAdmin == true)){%>
+							<form  style="display: inline" action="/not/<%= not._id%>?_method=DELETE" method="POST">
+							  <button class="btn btn-sm btn-danger">
+								Delete
+							  </button>
+							</form>
+							<%}%>
+							<hr style="border-top: 1px dashed rgba(0,0, 0, 0.2);">
+							<%})%>
+						</div>
+						<!-- </div> -->
+							
+							  
+					  
+					  <!-- </div> -->
+				</div>
+
+				<!--send message starts-->
+				<!-- <div class="col-md-6" style="border: 1px solid black;">
+					<br> -->
+					<div class="col-md-5" style="border: 1px solid black;float:right;">
+						<div class="section-title">
+							<h2 align="center" id="demo">Message us after login</h2>
+							<p align="center">Ping us for demo class link/any query</p>
+							<!-- <hr style="width:8%;opacity:0.95;"> -->
+						  </div>
+						<form action="/contactus" method="POST" role="form" class="php-email-form">
+						  <div class="form-row">
+							<div class="col-lg-6 form-group">
+							  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+							  <div class="validate"></div>
+							</div>
+							<div class="col-lg-6 form-group">
+							  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+							  <div class="validate"></div>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+							<div class="validate"></div>
+						  </div>
+						  <div class="form-group">
+							<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+							<div class="validate"></div>
+						  </div>
+						  <!-- <div class="mb-3">
+							<div class="loading">Loading</div>
+							<div class="error-message"></div>
+							<div class="sent-message">Your message has been sent. Thank you!</div>
+						  </div> -->
+						  <div class="text-center"><button type="submit">Send Message</button></div>
+						</form>
+					  </div>
+			
+				</div>
+			</div>
+		</div>
+
+	<!--our courses starts-->
+	<div id="fh5co-course">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Our Top Most Courses</h2>
+					<p>We provide the best for the best from the best</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 animate-box">
+					<div class="course">
+						<a href="#" class="course-img"
+							style="background-image: url(images/course1.png);background-size: 100%;">
+						</a>
+						<div class="desc">
+							<h3><a href="#">Bank Exams</a></h3>
+							<p>Bank exams are often considered in high regard for aspiring candidates who wish to step into the banking domain. 
+								There are multiple bank exams which are conducted by various banks and testing agencies across the country every year.</p>
+							<span><a href="course_for_u" class="btn btn-primary btn-sm btn-course">Take A TOUR</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="course">
+						<a href="#" class="course-img"
+							style="background-image: url(images/course2.png);background-size: 100%;">
+						</a>
+						<div class="desc">
+							<h3><a href="#">CRT Courses</a></h3>
+							<p>Education Street has a comprehensive program designed to train students for all the stages of the campus recruitment process done at various colleges including engineering, BSC and other related colleges.</p>
+							<span><a href="course_for_u" class="btn btn-primary btn-sm btn-course">Take A TOUR</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="course">
+						<a href="#" class="course-img"
+							style="background-image: url(images/course3.png);background-size: 100%;">
+						</a>
+						<div class="desc">
+							<h3><a href="#">CMAT Bootcamp</a></h3>
+							<p>Certified Management Accountant is accounting designation that signifies expertise in Financial accounting, strategic management. Certification builds on financial accounting proficiency by adding management skills that aid in making strategic business decisions based on financial data</p>
+							<span><a href="course_for_u" class="btn btn-primary btn-sm btn-course">Take A TOUR</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="course">
+						<a href="#" class="course-img"
+							style="background-image: url(images/course4.png);background-size: 100%;">
+						</a>
+						<div class="desc">
+							<h3><a href="#">CLAT</a></h3>
+							<p>The Common Law Admission Test (CLAT) is a national level entrance exam for admissions to candidates in undergraduate (UG) and postgraduate (PG) law courses offered at 22 NLUs and other colleges/ universities accepting exam scores.</p>
+							<span><a href="/go_to_clat" class="btn btn-primary btn-sm btn-course">Take A TOUR</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--our courses ends-->
+
+	<div id="fh5co-testimonial" style="background-image: url(images/school.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2><span>Testimonials</span></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="row animate-box">
+						<div class="owl-carousel owl-carousel-fullwidth">
+							<div class="item">
+								<div class="testimony-slide active text-center">
+									<div class="user" style="background-image: url(images/person1.jpg);"></div>
+									<span>Mary Walker<br><small>Students</small></span>
+									<blockquote>
+										<p>&ldquo;Far far away, behind the word mountains, far from the countries
+											Vokalia and Consonantia, there live the blind texts. Separated they live
+											in Bookmarksgrove right at the coast of the Semantics, a large language
+											ocean.&rdquo;</p>
+									</blockquote>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-slide active text-center">
+									<div class="user" style="background-image: url(images/person2.jpg);"></div>
+									<span>Mike Smith<br><small>Students</small></span>
+									<blockquote>
+										<p>&ldquo;Separated they live in Bookmarksgrove right at the coast of the
+											Semantics, a large language ocean.&rdquo;</p>
+									</blockquote>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-slide active text-center">
+									<div class="user" style="background-image: url(images/person3.jpg);"></div>
+									<span>Rita Jones<br><small>Teacher</small></span>
+									<blockquote>
+										<p>&ldquo;Far from the countries Vokalia and Consonantia, there live the
+											blind texts. Separated they live in Bookmarksgrove right at the coast of
+											the Semantics, a large language ocean.&rdquo;</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--our courese ends-->
+	<!--founder words-->
+	<div id="fh5co-blog">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>From Our Founders</h2>
+					<p>Some words of wisdom</p>
+				</div>
+			</div>
+			<div class="row row-padded-mb">
+				<div class="col-md-4 animate-box">
+					<div class="fh5co-event">
+						<img class="img" src="images/f1.jpg" style="width:100px;height:100px;" alt="image">
+							<h3><a href="#">Purushottam m Kulkarni</a></h3>
+						
+
+						<p>Education has move far from only theoretical to interactive to collaborative. YantroMitra focuses on Learning through Experimentation.</p>
+						<p><a href="#"></a></p>
+					</div>
+				</div>
+				<div class="col-md-4 animate-box">
+					<div class="fh5co-event">
+						<div><img class="img" src="images/f2.jpeg" style="width:100px;height:100px;" alt="image">
+							<h3><a href="#">Dr. MN Kulkarni</a></h3>
+						</div>
+
+						<p>YantroMitra focusses on empowering students using technology as a platform. We are here to connect the best teachers to the far flung students.
+							Creativity leads to out of the box thinking, and further to innovation. Hence there can be innovators only when there is freedom to be flexible.
+						</p>
+						<p><a href="#"></a></p>
+					</div>
+				</div>
+				<div class="col-md-4 animate-box">
+					<div class="fh5co-event">
+						<div><img class="img" src="images/f3.jpeg" style="width:100px;height:100px;" alt="image">
+							<h3><a href="#">Mrs. Janhavi P Kulkarni, Director</a></h3>
+						</div>
+
+						<p>Age group of 3 to 10 years is the most formative age segment. Positive reinforcement works the best for the child's overall development. And we at YantroMitra do the same with new DIY experiment.</p>
+						<p><a href="#"></a></p>
+					</div>
+				</div>
+			</div>
+			<!--founer words ends-->
+
+			<!--gallery-->
+			<div id="fh5co-gallery" class="fh5co-bg-section">
+				<div class="row text-center">
+					<h2><span>Gallery</span></h2>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-padded">
+						<a href="#" class="gallery" style="background-image: url(images/g1.jpeg);"></a>
+					</div>
+					<div class="col-md-3 col-padded">
+						<a href="#" class="gallery" style="background-image: url(images/g2.jpeg);"></a>
+					</div>
+					<div class="col-md-3 col-padded">
+						<a href="#" class="gallery" style="background-image: url(images/g3.jpeg);"></a>
+					</div>
+					<div class="col-md-3 col-padded">
+						<a href="#" class="gallery" style="background-image: url(images/g4.jpeg);"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--ends-->
+		<br>
+		<br>
+
+
+
+
+		<!-- ends--> 
+		<!--take 3-->
+		
+		</div>
+	</div>
+	<!--send message ends-->
+	
+
+	<!--take 3 ends-->
+	<br>
+	<br>
+	<footer class="col-xs-12" id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row row-pb-md">
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Course &amp; Categories</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Entrance Exams Courses</a></li>
+						<li><a href="#">School Level Courses</a></li>
+						<li><a href="#">STEM Education</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+					<h3>Available &amp; Courses</h3>
+					<ul class="fh5co-footer-links">
+						<li><a href="#">BANK</a></li>
+						<li><a href="#">CLAT</a></li>
+						<li><a href="#">CRT</a></li>
+						<li><a href="#">CMAT</a></li>
+
+					</ul>
+				</div>
+
+				
+
+				<div class="col-md-3 fh5co-widget" style="margin-right:0">
+
+				</div>
+				<div class="col-md-3 fh5co-widget">
+					<h3>Contact</h3>
+					<p><i class="fa fa-address-book-o"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+						RTBI Peenya Industrial Estate</p>
+					<ul class="fh5co-footer-links">
+						<li><i class="fa fa-anchor"></i>&nbsp;&nbsp;&nbsp;&nbsp;Bangalore India
+						</li>
+						<li><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;+91 8618630980</li>
+						<li><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;xyz@gmail.com</li>
+
+					</ul>
+
+
+				</div>
+
+
+				<div class="col-xs-12">
+					<nav class="navbar navbar-inverse">
+						<div class="container-fluid">
+							<div class="navbar-header">
+
+							</div>
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-address-book-o"></i></a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-github"></i></a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#"><span></span>YantroMitra</a></li>
+
+							</ul>
+						</div>
+					</nav>
+				</div>
+
+
+
+			</div>
+	</footer>
+
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Count Down -->
+	<script src="js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	<script>
+		var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate()
+		});
+
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			enableUtc: false
+		});
+
+		jQuery(document).ready(function($){
+	$('.x-nav-wrap.mobile a').on('touchstart', function(e) {
+		$('.x-nav-wrap.mobile').click();
+	});
+});
+
+	
+
+
+
+
+		// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+myBtn.onclick = function() {
+	alert("LOGIN WITH YOUR GOOGLE EMAIL ID USED IN YOUTUBE");
+  loginbox.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+	</script>
+</body>
+
+</html>
